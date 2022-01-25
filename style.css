@@ -161,7 +161,48 @@ nav .nav-bar .nav-links a:hover {
 }
 
 /* benefits section design */
+#benefits-section {
+  margin: 100px 0;
+}
 
+#benefits-section h1 {
+  margin: 20px 0;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits .long-cards {
+  margin: 0 5px;
+}
+
+.benefits .long-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px gray;
+  margin: 20px 0;
+  padding: 20px 5px;
+}
+
+.benefits .long-card i {
+  margin: 0 20px;
+}
+
+.benefits .width-50 img {
+  width: 100%;
+}
+
+/* footer section design */
+#footer-section .footer{
+    margin: 0px 0px 5px 0px;
+    text-align: center;
+}
 
 /* 992px and less */
 @media screen and (max-width: 992px) {
@@ -203,6 +244,12 @@ nav .nav-bar .nav-links a:hover {
     font-size: 20px;
   }
 
+  /* benefits section */
+  .benefits {
+    display: flex;
+    flex-direction: column;
+  }
+
   /* half width */
   .width-50 {
     width: 90%;
@@ -221,6 +268,12 @@ nav .nav-bar .nav-links a:hover {
   .cards {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  /* benefits section */
+  .benefits {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   /* half width */
